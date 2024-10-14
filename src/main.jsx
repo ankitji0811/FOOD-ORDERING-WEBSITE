@@ -8,7 +8,11 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import {Home, Contact, About} from "../src/pages"
+import { Home, Contact, About } from "../src/pages";
+import RestaurantMenu from "./components/RestaurantMenu.jsx";
+import { Provider } from "react-redux";
+import store from "./utils/store.js";
+import Cart from "./components/Cart.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,12 +20,16 @@ const router = createBrowserRouter(
       <Route path="" element={<Home />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
+      <Route path="/cart" element={<Cart/>} />
+      <Route path="/restaurant/:resId" element={<RestaurantMenu />} />
     </Route>
   )
 );
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
+  <Provider store={store}>
+    <StrictMode>
+      <RouterProvider router={router} />
+    </StrictMode>
+  </Provider>
 );

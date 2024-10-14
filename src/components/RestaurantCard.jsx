@@ -2,17 +2,16 @@ import { RESTURANT_CARD_IMG_URL } from "../utils";
 import { Rate } from "../assets";
 
 const RestaurantCard = (props) => {
-
-    const {restaurantData} = props;
+  const { restaurantData } = props;
 
   const { cloudinaryImageId, name, areaName, avgRating, cuisines } =
     restaurantData?.info;
 
-    // console.log(restaurantData.info.sla.slaString);
+  // console.log(restaurantData.info.sla.slaString);
 
-  const { slaString } = restaurantData?.info?.sla
+  const { slaString } = restaurantData?.info?.sla;
 
-//   console.log(props.restaurantData.info);
+  //   console.log(props.restaurantData.info);
 
   const { header } =
     restaurantData?.info?.aggregatedDiscountInfoV2 ||
@@ -27,7 +26,7 @@ const RestaurantCard = (props) => {
   };
 
   return (
-    <div className=" max-w-64 min-w-64 min-h-72 max-h-72 cursor-pointer hover:scale-95 duration-200 overflow-visible py-3">
+    <div className=" max-w-64 min-w-64 min-h-72 max-h-72 cursor-pointer hover:scale-95 duration-200 overflow-visible py-2">
       <div className="mb-2 relative">
         <img
           className="max-w-64 min-w-64  min-h-44 max-h-44 rounded-2xl object-cover "

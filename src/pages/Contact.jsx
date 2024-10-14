@@ -2,7 +2,7 @@
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div className="max-w-6xl mx-auto py-4">Contact</div>
   )
 }
 
