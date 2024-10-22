@@ -1,5 +1,5 @@
 import { RESTURANT_CARD_IMG_URL } from "../utils";
-import { Rate } from "../assets";
+import { Rate } from "../../public/assets/index";
 
 const RestaurantCard = (props) => {
   const { restaurantData } = props;

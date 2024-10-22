@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { Nonveg, Veg } from "../assets";
+import { Nonveg, Veg } from "../../public/assets/index";
 import { ITEM_IMG_URL } from "../utils";
 import { addItem } from "../utils/cartSlice";
 import toast, { Toaster } from "react-hot-toast";

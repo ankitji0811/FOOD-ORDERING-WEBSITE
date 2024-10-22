@@ -1,4 +1,4 @@
-import { Rate } from "../assets";
+import { Rate } from "../../public/assets/index";
 import { useParams } from "react-router-dom";
 import useRestaurantMenu from "../hooks/useRestaurantMenu";
 import { MenuShimmer } from "./Shimmer";
