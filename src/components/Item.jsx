@@ -1,4 +1,4 @@
-import { ITEM_IMG_URL } from "../utils"
+import { ITEM_IMG_URL } from "../utils";
 
 
 const Item = (props) => {

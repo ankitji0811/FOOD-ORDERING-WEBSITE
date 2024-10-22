@@ -38,7 +38,7 @@ const Home = () => {
   return listOfRestaurants.length === 0 ? (
     <HomeShimmer/>
   ) : (
-    <div className="max-w-6xl mx-auto py-4">
+    <div className="max-w-6xl mx-auto py-4 -z-10">
       {/* First Crousel */}
       {itemList && (
         <div className="flex flex-col border-b border-gray-500">
@@ -94,7 +94,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="resturant-container flex gap-x-9 mt-4 overflow-x-hidden scroll-smooth mb-20 ">
+          <div className="resturant-container flex gap-x-9 mt-4 overflow-x-hidden scroll-smooth mb-20 z-0">
             {topChains.map((restaurant) => (
               <Link
                 key={restaurant.info.id}
